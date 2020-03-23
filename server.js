@@ -7,6 +7,7 @@ require('dotenv').config();
  * *Import Routes
  */
 const authRoute = require('./routes/auth');
+const postRoute = require('./routes/posts');
 
 
 
@@ -27,6 +28,7 @@ app.use(express.json());
  */
 
 app.use('/api/user', authRoute);
+app.use('/api/posts', postRoute);
 
 
 
