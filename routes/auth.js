@@ -4,12 +4,9 @@ const User = require('../models/User');
 
 router.get('/register', async (req, res) => {
     const user = new User({
-        // name:req.body.name,
-        // password: req.body.password,
-        // email:req.body.email
-        name:"Bonnie Simon",
-        passoword:"xyz",
-        email:"bonnie@gmail.com"
+         name:req.body.name,
+         password: req.body.password,
+         email:req.body.email
     });  
     
     try{

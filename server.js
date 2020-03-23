@@ -19,6 +19,7 @@ mongoose.connect(process.env.MONGO_DB_URL, { useNewUrlParser: true, useUnifiedTo
 /**
  * *MiddleWares
  */
+//body-parser - for getting data from post request
 app.use(express.json());
 
 /**
